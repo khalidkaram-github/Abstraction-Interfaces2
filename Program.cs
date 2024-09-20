@@ -6,8 +6,12 @@
         static void Main(string[] args)
         {
             var dog = new Dog();
-            dog.MakeSound();
+            //dog.MakeSound();
             dog.Move();
+
+            var cat = new Cat();
+            cat.Move();
+            //cat.MakeSound();
         }
     }
 
@@ -24,11 +28,6 @@
     }
     public class Dog : IAnimal
     {
-        // Override the default implementation
-        public void MakeSound()
-        {
-            Console.WriteLine("The dog barks.");
-        }
 
         // Must implement the abstract method
         public void Move()
